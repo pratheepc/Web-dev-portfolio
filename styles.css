@@ -5,14 +5,24 @@
 /* Styling Starts Here */
 /* ........................................ */
 
+:root{
+  --primary-colour: white;
+  --secondary-color: #1b1b1b;
+  --title-font: "Raleway", sans-serif;
+  --content-font: "Montserrat", sans-serif;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--content-font);
+  background: var(--secondary-color);
+  color: var(--primary-colour);
+  /* box-sizing: border-box; */
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--title-font);
 }
 
 small {
@@ -27,4 +37,63 @@ small {
   padding: 0 20px 0 20px;
   margin: auto;
   max-width: 980px;
+}
+
+.link{
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 75px;
+}
+
+.primary-link{
+  background: var(--primary-colour);
+  color: var(--secondary-color);
+}
+
+.secondary-link{
+  border: 1px solid var(--primary-colour);
+  color: var(--primary-colour);
+}
+
+hr{
+  margin: 3rem 0;
+}
+
+.no-bullet-list{
+  list-style: none;
+}
+
+.inline-list-item{
+  display: inline;
+  padding: 0 10px;
+}
+
+.nav-bar{
+  margin: 1em;
+  font-size: 1.25rem;
+}
+
+.brand{
+  display: inline;
+  font-weight: 900;
+  font-family: var(--title-font);
+
+}
+
+.menu{
+  float: right;
+  color: white;
+  display: inline;
+  text-align: right;
+  margin: 0;
+}
+
+.nav-bar .menu-item{
+  text-decoration: none;
+  color: var(--primary-colour);
+  padding: 0 1.5em;
+}
+
+.nav-bar .link-active{
+  font-weight: bolder;
 }
