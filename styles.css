@@ -5,7 +5,7 @@
 /* Styling Starts Here */
 /* ........................................ */
 
-:root{
+:root {
   --primary-colour: white;
   --secondary-color: #1b1b1b;
   --title-font: "Raleway", sans-serif;
@@ -16,7 +16,7 @@ body {
   font-family: var(--content-font);
   background: var(--secondary-color);
   color: var(--primary-colour);
-  /* box-sizing: border-box; */
+  margin: 0;
 }
 
 h1,
@@ -39,48 +39,47 @@ small {
   max-width: 980px;
 }
 
-.link{
+.link {
   padding: 10px;
   text-decoration: none;
   border-radius: 75px;
 }
 
-.primary-link{
+.primary-link {
   background: var(--primary-colour);
   color: var(--secondary-color);
 }
 
-.secondary-link{
+.secondary-link {
   border: 1px solid var(--primary-colour);
   color: var(--primary-colour);
 }
 
-hr{
+hr {
   margin: 3rem 0;
 }
 
-.no-bullet-list{
+.no-bullet-list {
   list-style: none;
 }
 
-.inline-list-item{
+.inline-list-item {
   display: inline;
   padding: 0 10px;
 }
 
-.nav-bar{
+.nav-bar {
   margin: 1em;
   font-size: 1.25rem;
 }
 
-.brand{
+.brand {
   display: inline;
   font-weight: 900;
   font-family: var(--title-font);
-
 }
 
-.menu{
+.menu {
   float: right;
   color: white;
   display: inline;
@@ -88,12 +87,32 @@ hr{
   margin: 0;
 }
 
-.nav-bar .menu-item{
+.nav-bar .menu-item {
   text-decoration: none;
   color: var(--primary-colour);
   padding: 0 1.5em;
 }
 
-.nav-bar .link-active{
+.nav-bar .link-active {
   font-weight: bolder;
+}
+
+.hero {
+  background: url("./images/hero.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-heading {
+  font-size: 4em;
+  font-weight: lighter;
+  padding: 30px 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.highlight {
+  font-weight: 600;
 }
