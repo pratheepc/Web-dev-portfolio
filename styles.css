@@ -123,19 +123,31 @@ hr {
   font-weight: 600;
 }
 
-.section h3 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
 .fluid-container {
   background-color: white;
-  width: 100vw;
+  margin: auto;
+}
+
+.section {
+  width: 980px;
   margin: auto;
 }
 
 .white-section {
   background: var(--primary-colour);
   color: #404242;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: var(--primary-colour);
+  text-align: center;
+  color: #404242;
   padding: 20px;
+}
+
+.footer .link {
+  font-weight: bold;
+  
 }
