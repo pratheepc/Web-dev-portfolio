@@ -36,6 +36,7 @@ small {
 .center-container {
   padding: 0 20px 0 20px;
   margin: auto;
+  margin-top: 0;
   max-width: 980px;
 }
 
@@ -134,7 +135,7 @@ hr {
 }
 
 .white-section {
-  background: var(--primary-colour);
+  background: #dadada;
   color: #404242;
   text-align: center;
   padding: 2rem;
@@ -149,5 +150,29 @@ hr {
 
 .footer .link {
   font-weight: bold;
-  
+}
+
+.tech-stack-list {
+  text-align: center;
+  padding: 0;
+}
+
+.skills-grid {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech-icons {
+  max-height: 100px;
+}
+
+section{
+  margin: 0;
+  padding: 20px;
+}
+
+#test{
+  margin-bottom: 1000px;
+
 }
